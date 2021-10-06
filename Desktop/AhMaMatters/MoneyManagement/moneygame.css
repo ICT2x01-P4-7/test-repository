@@ -1,0 +1,82 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 12 Sep, 2021, 8:23:55 PM
+    Author     : Henry
+*/
+
+body {
+    background: var(--bg-color);
+}
+
+#content{
+    display:flex;
+    background:var(--default-bg);
+    margin:20px;
+    flex-direction: column;
+    align-content: space-around;
+    justify-content: space-around;
+    align-items: start;
+    height:660px;
+}
+
+.amount{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    border:2px solid black;
+    height:330px;
+    width:100%;
+    justify-content: center;
+    align-items: center;
+    background: url(../src/moneybg.jpg);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+
+.amounttext{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    background:var(--default-bg);
+    font-weight:bold;
+    font-size:30px;
+    width:80%;
+    height:200px;
+    margin:20px;
+    border-radius: 20px;
+    opacity: 0.9;
+    justify-content: center;
+    align-items: center;
+}
+
+.counter{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    border:2px solid black;
+    height:330px;
+    width:100%;
+}
+
+.moneybutton{
+    width:25%;
+/*    background: url(../src/onedollar.jpg);
+    background-repeat: no-repeat;
+    background-size: 165px 200px;*/
+}
+
+.moneybuttontwo{
+    width:20%;
+    background: url(../src/twodollar.jpg);
+    background-repeat: no-repeat;
+    background-size: 165px 200px;
+    -webkit-transform: rotate(90deg);
+    -moz-transform: rotate(90deg);
+    -ms-transform: rotate(90deg);
+    -o-transform: rotate(90deg);
+    transform: rotate(90deg);
+}

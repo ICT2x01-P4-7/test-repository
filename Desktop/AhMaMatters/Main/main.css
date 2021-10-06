@@ -1,0 +1,77 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 12 Sep, 2021, 1:30:28 AM
+    Author     : Henry
+*/
+@media screen and (orientation:landscape) {
+:root{
+    --bg-color: #FFFDFA;
+    --font-one: #222222;
+    --font-two: #7A7A7A;
+    --disabled-color: #D3D3D3;
+    --pri-color : #FF93A6; /*coral*/
+    --sec-color : #62DCCA; /*teal*/
+    --ter-color : #FFDD82; /*yellow*/
+    --qua-color : #7EBFFF; /*purple*/
+    --default-bg : white;
+}
+
+// Extra small devices (portrait phones, less than 576px)
+@media (max-width: 575.98px) {  }
+
+// Small devices (landscape phones, 576px and up)
+@media (min-width: 576px) and (max-width: 767.98px) {  }
+
+// Medium devices (tablets, 768px and up)
+@media (min-width: 768px) and (max-width: 991.98px) {  }
+
+// Large devices (desktops, 992px and up)
+@media (min-width: 992px) and (max-width: 1199.98px) {  }
+
+// Extra large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) {  }
+
+.navbar{
+/*    min-height: 10vh;*/
+    display:flex;
+    width:100%;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    border-bottom: 1px solid var(--font-two);
+}
+
+.navbar-brand{
+    color:#222222;
+}
+
+.nav-link{
+    color:var(--font-two);
+    fill:none;
+}
+
+.nav-link:hover{
+    font-weight:bold;
+    color:#222222;
+}
+
+.active{
+    font-weight:bold;
+    color:#222222;
+    transition: font-weight .2s, color .2s;
+}
+
+.alert{
+    position:fixed;
+    width:96vw;
+    margin:20px;
+}
+}
+
+
+
+
+

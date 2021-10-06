@@ -1,0 +1,152 @@
+
+/*To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+
+ 
+    Created on : Aug 4, 2021, 12:12:19 AM
+    Author     : SageSG*/
+
+/** {
+    border: 1px solid red;
+}*/
+
+// Extra small devices (portrait phones, less than 576px)
+@media (max-width: 575.98px) { ... }
+
+// Small devices (landscape phones, 576px and up)
+@media (min-width: 576px) and (max-width: 767.98px) { ... }
+
+// Medium devices (tablets, 768px and up)
+@media (min-width: 768px) and (max-width: 991.98px) { ... }
+
+// Large devices (desktops, 992px and up)
+@media (min-width: 992px) and (max-width: 1199.98px) { ... }
+
+// Extra large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) { ... }
+
+body{
+    background:var(--bg-color);
+}
+
+#content{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 91vh;
+}
+
+#content-left{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: flex-start;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#content-right{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: flex-end;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#content-right > span{
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    color:var(--font-two);
+    font-size:0.9em;
+}
+
+#content-right > a{
+    text-decoration:none;
+    font-size:0.8em;
+    color: var(--font-two);
+    padding-left:20px;
+    padding-right:20px;
+}
+
+#content-right > button {
+    margin-top:20px;
+    margin-left:20px;
+    margin-right:20px;
+    width: 360px;
+    padding:10px;
+    background:var(--sec-color);
+    font-weight:bold;
+    border-radius:5px;
+    border:solid 1px #D3D3D3;
+    color: var(--font-two);
+}
+
+hr{
+    color:var(--font-two);
+    width:140px;
+    margin-left:20px;
+    margin-right:20px;
+}
+
+#content-right > button:disabled {
+    background:var(--disabled-color);
+}
+
+#content-right > .inputplusicon{
+    margin:20px;
+    width: 360px;
+    display:flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    border-radius:5px;
+    border:1.5px solid var(--font-two);
+
+}
+
+#content-right > .inputplusicon> input{
+    width: 320px;
+    align-content: flex-start;
+    padding:10px;
+    background:var(--bg-color);
+    border:none;
+}
+
+#content-right > .inputplusicon> i{
+    align-content: flex-end;
+    padding-right:10px;
+    color:var(--font-two);
+    
+}
+
+#login-title{
+    background: linear-gradient(
+    to right,
+    var(--ter-color),
+    var(--ter-color) 12rem,
+    transparent 1rem,
+    transparent 70%
+  );
+}
+
+input{
+    border-radius:5px;
+}
+
+textarea:focus, input:focus{
+    outline: none;
+}
+
+.hide {
+    display: none;
+}
+
+#invalidPass {
+    color: red;
+}
